@@ -1,7 +1,5 @@
 #ifndef CARFACTORY_H
 #define CARFACTORY_H
-#pragma once
-
 #include "car.h"
 #include <memory>
 

@@ -11,6 +11,10 @@ add_executable(${BINARY}
     carlist.h
     concreatecarfactory.cpp
     concreatecarfactory.h
+    carmodifications.h
+    carmodifications.cpp
+    race.h
+    race.cpp
     )
 
 add_library(${BINARY}_lib STATIC     	
@@ -21,7 +25,12 @@ add_library(${BINARY}_lib STATIC
     carlist.cpp
     carlist.h
     concreatecarfactory.cpp
-    concreatecarfactory.h)
+    concreatecarfactory.h
+    carmodifications.h
+    carmodifications.cpp
+    race.h
+    race.cpp
+    )
 
 install(TARGETS ${BINARY}
         RUNTIME DESTINATION  ${CMAKE_INSTALL_PREFIX}/bin

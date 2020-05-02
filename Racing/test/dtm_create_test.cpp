@@ -3,7 +3,7 @@
 #include "car.h"
 
 
-TEST(DTM_CREATING_TEST, test_1) {
+TEST(DTM_CREATING_TEST, test_2) {
     std::shared_ptr<Car_Factory> DTM_Factory = std::make_shared<DTM_Car_Factory>();
     std::shared_ptr<Car> dtm_car = DTM_Factory->Create_Car();
     EXPECT_EQ(dtm_car->get_power(), 750);

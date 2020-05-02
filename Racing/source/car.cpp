@@ -3,9 +3,11 @@
 Car::Car(int power,
          int weight,
          int max_speed,
-         int controllability) :
+         int controllability,
+         RacingSeries type,
+         int number) :
     _power(power), _weight(weight),
-    _max_speed(max_speed), _controllability(controllability){}
+    _max_speed(max_speed), _controllability(controllability), _type(type), _number(number) {}
 
 const int Car::get_power() const {
      return _power;
