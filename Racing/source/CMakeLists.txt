@@ -5,31 +5,27 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${Racing_SOURCE_DIR}/lib)
 add_executable(${BINARY}
     main.cpp
     car.cpp
-    car.h
-    carfactory.h
     carlist.cpp
-    carlist.h
     concreatecarfactory.cpp
-    concreatecarfactory.h
-    carmodifications.h
     carmodifications.cpp
-    race.h
-    race.cpp
+    concreate_race.cpp
+    game.cpp
+    race_interface.cpp
+    racing_team.cpp
+    tracks.cpp
     )
 
 add_library(${BINARY}_lib STATIC     	
     main.cpp
     car.cpp
-    car.h
-    carfactory.h
     carlist.cpp
-    carlist.h
     concreatecarfactory.cpp
-    concreatecarfactory.h
-    carmodifications.h
     carmodifications.cpp
-    race.h
-    race.cpp
+    concreate_race.cpp
+    game.cpp
+    race_interface.cpp
+    racing_team.cpp
+    tracks.cpp
     )
 
 install(TARGETS ${BINARY}

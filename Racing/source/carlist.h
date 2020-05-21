@@ -7,6 +7,7 @@
 class Formula1_Car : public Car {
 public:
     Formula1_Car();
+    std::string GetType() override;
     void Race() const override;
 };
 
@@ -14,6 +15,7 @@ public:
 class DTM_Car : public Car {
 public:
     DTM_Car();
+    std::string GetType() override;
     void Race() const override;
 };
 
@@ -21,6 +23,7 @@ public:
 class GT_Car : public Car {
 public:
     GT_Car();
+    std::string GetType() override;
     void Race() const override;
 };
 

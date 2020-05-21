@@ -1,5 +1,6 @@
 #ifndef CAR_H
 #define CAR_H
+#include <string>
 
 enum RacingSeries {
     Formula1,
@@ -16,7 +17,7 @@ public:
         RacingSeries type,
         int number = 1);
     virtual ~Car() {};
-
+    virtual std::string GetType() = 0;
     virtual void Race() const = 0;
     virtual const int get_power() const;
     virtual const int get_weight() const;
